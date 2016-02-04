@@ -1,0 +1,82 @@
+{
+    "cabling": [
+        {
+            "dest_host": "leaf02",
+            "dest_iface": "swp1",
+            "src_host": "leaf01",
+            "src_iface": "swp1"
+        },
+        {
+            "dest_host": "leaf02",
+            "dest_iface": "swp2",
+            "src_host": "leaf01",
+            "src_iface": "swp2"
+        },
+        {
+            "dest_host": "leaf02",
+            "dest_iface": "swp3",
+            "src_host": "leaf01",
+            "src_iface": "swp3"
+        },
+        {
+            "dest_host": "leaf02",
+            "dest_iface": "swp4",
+            "src_host": "leaf01",
+            "src_iface": "swp4"
+        },
+        {
+            "dest_host": "leaf01",
+            "dest_iface": "swp5",
+            "src_host": "host01",
+            "src_iface": "eth1"
+        },
+        {
+            "dest_host": "leaf01",
+            "dest_iface": "swp6",
+            "src_host": "host02",
+            "src_iface": "eth1"
+        },
+        {
+            "dest_host": "leaf02",
+            "dest_iface": "swp5",
+            "src_host": "host01",
+            "src_iface": "eth2"
+        },
+        {
+            "dest_host": "leaf02",
+            "dest_iface": "swp6",
+            "src_host": "host02",
+            "src_iface": "eth2"
+        }
+    ],
+    "devices": [
+        {
+            "device_type": "switch",
+            "hostname": "leaf01",
+            "mgmt_ip": "192.168.0.11",
+            "nics": 6,
+            "operating_system": "cumulusvx-2.5.5"
+        },
+        {
+            "device_type": "switch",
+            "hostname": "leaf02",
+            "mgmt_ip": "192.168.0.12",
+            "nics": 6,
+            "operating_system": "cumulusvx-2.5.5"
+        },
+        {
+            "device_type": "server",
+            "hostname": "host01",
+            "mgmt_ip": "192.168.0.21",
+            "nics": 2,
+            "operating_system": "ubuntu-trusty"
+        },
+        {
+            "device_type": "server",
+            "hostname": "host02",
+            "mgmt_ip": "192.168.0.22",
+            "nics": 2,
+            "operating_system": "ubuntu-trusty"
+        }
+    ]
+}
