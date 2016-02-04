@@ -1,5 +1,5 @@
 ---
-- hosts: host
+- hosts: hosts
   user: cumulus
   become: yes
   become_method: sudo
@@ -7,7 +7,7 @@
     - hosts
   handlers:
     - include : handlers/main.yml
-- hosts: leaf
+- hosts: leafs
   user: cumulus
   become: yes
   become_method: sudo
