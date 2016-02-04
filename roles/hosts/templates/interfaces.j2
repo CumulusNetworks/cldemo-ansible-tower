@@ -1,4 +1,4 @@
-{% set intvars = quagga.interfaces[ansible_hostname] %}
+{% set intvars = interfaces[ansible_hostname] %}
 {% set loopback_ip = intvars.loopback -%}
 {% if intvars.bridges is defined -%}
 {% set swbridges = intvars.bridges -%}
