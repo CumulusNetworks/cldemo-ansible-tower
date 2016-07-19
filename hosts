@@ -1,7 +1,11 @@
+[spines]
+spine01
+spine02
+
 [leafs]
 leaf01
 leaf02
 
-[hosts]
-host01
-host02
+[servers]
+server01
+server02
