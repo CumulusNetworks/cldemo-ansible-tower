@@ -55,7 +55,7 @@ Navigate to https://localhost:9000/#/inventories and click on the blue cross
 at the top right of the table to add a new inventory. Create a new inventory
 with the following values:
 
-    * Name: **Reference Topology**
+ * Name: **Reference Topology**
 
 Now, in your terminal, run the following commands.
 
