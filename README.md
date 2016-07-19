@@ -32,9 +32,9 @@ Ansible Tower to install.
     ssh -L 9000:localhost:443 vagrant@localhost -p 2222 -o StrictHostKeyChecking=no
     vagrant
 
-![fig1](fig1.png)
+![](https://github.com/CumulusNetworks/cldemo-ansible-tower/blob/master/fig1.png)
 
-![fig2](fig2.png)
+![](https://github.com/CumulusNetworks/cldemo-ansible-tower/blob/master/fig2.png)
 
 Leave this terminal open for the duration of the demo - this creates an SSH
 tunnel that will allow you to use the Ansible website from your host machine.
