@@ -34,9 +34,10 @@ Ansible Tower to install.
 
 Leave this terminal open for the duration of the demo - this creates an SSH
 tunnel that will allow you to use the Ansible website from your host machine.
-In Firefox or Chrome, navigate to https://localhost:9000 - you will receive an
-error message stating that your connection is not secure. Go to Advanced and
-either add an exception or tell it to proceed to localhost anyway.
+In Firefox or Chrome, navigate to [https://localhost:9000](https://localhost:9000).
+You will receive an error message stating that your connection is not secure.
+Go to Advanced and either add an exception or tell it to proceed to localhost
+anyway.
 
 ![](fig1.png)
 
@@ -55,8 +56,8 @@ Setting up the Inventory
 Your inventory includes all of the hosts, groups, host variables, and group
 variables. You need an inventory in order to run Ansible commands.
 
-Navigate to https://localhost:9000/#/inventories and click on the blue cross
-at the top right of the table to add a new inventory. Create a new inventory
+Navigate to [https://localhost:9000/#/inventories](https://localhost:9000/#/inventories)
+and click on the blue cross at the top right of the table to add a new inventory. Create a new inventory
 with the following values:
 
  * Name: **Reference Topology**
@@ -75,7 +76,8 @@ Creating Machine Credentials
 Machine credentials include the login parameters (passwords, SSH keys) to log
 into devices to do jobs. We will use the default: *cumulus/CumulusLinux!*
 
-Navigate to https://localhost:9000/#/credentials and click on the blue cross
+Navigate to [https://localhost:9000/#/credentials](https://localhost:9000/#/credentials)
+and click on the blue cross
 at the top right of the table to add a new credential. Create a new credential
 with the following values:
 
@@ -98,7 +100,8 @@ in our other demo, https://github.com/cumulusnetworks/cldemo-automation-ansible,
 but note that we will be ignoring the variables and hosts in its inventory,
 since we use the inventory that we imported directly into Tower.
 
-Navigate to https://localhost:9000/#/projects and click on the blue cross
+Navigate to [https://localhost:9000/#/projects](https://localhost:9000/#/projects)
+and click on the blue cross
 at the top right of the table to add a new project. Create a new project
 with the following values:
 
@@ -112,7 +115,8 @@ successfully downloaded, a green dot will appear to the left of its name.
 
 Creating a Job Template
 -----------------------
-Navigate to https://localhost:9000/#/job_templates and click on the blue cross
+Navigate to [https://localhost:9000/#/job_templates](https://localhost:9000/#/job_templates)
+and click on the blue cross
 at the top right of the table to add a new template. Create a new template
 with the following values:
 
