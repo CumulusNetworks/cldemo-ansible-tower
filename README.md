@@ -25,6 +25,7 @@ Ansible Tower to install.
     vagrant
     y
     sudo ./setup.sh
+    git clone https://github.com/cumulusnetworks/cldemo-ansible-tower
 
 *In a new terminal*
 
@@ -47,3 +48,7 @@ installations of up to 10 nodes (which is sufficient for these demo purposes).
 
 Setting up the Inventory
 ------------------------
+Your inventory.
+
+    cd ~/cldemo-ansible-tower
+    sudo tower-manage inventory_import --source=inventory --inventory-name="Reference Topology"
