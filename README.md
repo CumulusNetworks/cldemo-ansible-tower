@@ -32,6 +32,10 @@ Ansible Tower to install.
     ssh -L 9000:localhost:443 vagrant@localhost -p 2222 -o StrictHostKeyChecking=no
     vagrant
 
+![fig1.png]
+
+![fig2.png]
+
 Leave this terminal open for the duration of the demo - this creates an SSH
 tunnel that will allow you to use the Ansible website from your host machine.
 In Firefox or Chrome, navigate to https://localhost:9000 - you will receive an
