@@ -51,4 +51,4 @@ Setting up the Inventory
 Your inventory.
 
     cd ~/cldemo-ansible-tower
-    sudo tower-manage inventory_import --source=inventory --inventory-name="Reference Topology"
+    sudo tower-manage inventory_import --source=. --inventory-name="Reference Topology"
