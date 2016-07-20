@@ -1,4 +1,11 @@
 
+Before you start
+----------------
+If you don't already have a license for Ansible Tower, you can get a trial license
+for deployments up to 10 devices for free by visiting
+[https://www.ansible.com/license](https://www.ansible.com/license). Download this
+license and have it available while running the demo.
+
 
 Installing Ansible Tower
 ------------------------
