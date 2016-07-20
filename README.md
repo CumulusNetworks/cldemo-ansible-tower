@@ -18,12 +18,7 @@ Ansible Tower to install.
     wget https://releases.ansible.com/awx/setup/ansible-tower-setup-latest.tar.gz
     tar xvzf ansible-tower-setup-latest.tar.gz
     cd ansible-tower-setup-*
-    ./configure
-    localhost
-    i
-    vagrant
-    vagrant
-    y
+    # edit ./inventory and set all of the fields with a password to 'vagrant'
     sudo ./setup.sh
     git clone https://github.com/cumulusnetworks/cldemo-ansible-tower
 
