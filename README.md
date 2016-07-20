@@ -14,7 +14,9 @@ You will need to increase the RAM for the `oob-mgmt-server` to 2G in order for
 Ansible Tower to install.
 
     git clone https://github.com/cumulusnetworks/cldemo-vagrant
+    cd cldemo-vagrant
     # edit Vagrantfile and replace v.memory for the oob-mgmt-server from 1024 to 2048
+    sed -i 's/v.memory = 1048/v.memory = 2048/g' Vagrantfile
     vagrant up oob-mgmt-server oob-mgmt-switch leaf01 leaf02 spine01 spine02 server01 server02
     vagrant ssh oob-mgmt-server
     sudo su - cumulus
@@ -26,6 +28,7 @@ Ansible Tower to install.
     tar xvzf ansible-tower-setup-latest.tar.gz
     cd ansible-tower-setup-*
     # edit ./inventory and set all of the fields with a password to 'vagrant'
+    sed -i "s/password=''/password='vagrant'/g" inventory
     sudo ./setup.sh
     git clone https://github.com/cumulusnetworks/cldemo-ansible-tower
 
