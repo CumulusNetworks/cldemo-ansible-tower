@@ -1,4 +1,11 @@
 
+Ansible Tower Demo
+=======================
+This demo demonstrates how to setup Ansible Tower on an Ubuntu 14.04 host to control Cumulus Linux switches. The demo will go through the process of installing Ansible Tower and setting it up to run a playbook against a group of switches running Cumulus Linux.
+
+This demo is written for the [cldemo-vagrant](https://github.com/cumulusnetworks/cldemo-vagrant) reference topology and applies Ansible playbook from the [cldemo-automation-ansible](https://github.com/cumulusnetworks/cldemo-automation-ansible) demo which references the BGP unnumbered configuration from the  [cldemo-config-routing](https://github.com/cumulusnetworks/cldemo-config-routing) demo.
+
+
 Before you start
 ----------------
 If you don't already have a license for Ansible Tower, you can get a trial license
