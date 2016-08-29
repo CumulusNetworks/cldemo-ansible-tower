@@ -44,6 +44,20 @@ Ansible Tower to install.
     ssh -L 9000:localhost:443 vagrant@localhost -p 2222 -o StrictHostKeyChecking=no
     vagrant
 
+*Alternative to leaving ssh open in a seperate terminal*
+
+Edit your Vagrantfile and add these lines under the "oob-mgmt-server" configuration
+
+      # port forwarding for tower server
+      device.vm.network "forwarded_port", guest:8080, host: 8080
+      device.vm.network "forwarded_port", guest:443, host: 9000
+
+After the Vagrantfile change run the following command:
+    
+    sudo vagrant reload
+
+Then open your browser as stated below.
+
 Leave this terminal open for the duration of the demo - this creates an SSH
 tunnel that will allow you to use the Ansible website from your host machine.
 In Firefox or Chrome, navigate to [https://localhost:9000](https://localhost:9000).
