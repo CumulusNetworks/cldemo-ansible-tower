@@ -16,6 +16,8 @@ license and have it available while running the demo.
 
 Installing Ansible Tower
 ------------------------
+Before running this demo, install [VirtualBox](https://www.virtualbox.org/wiki/Download_Old_Builds) and [Vagrant](https://releases.hashicorp.com/vagrant/). The currently supported versions of VirtualBox and Vagrant can be found on the [cldemo-vagrant](https://github.com/cumulusnetworks/cldemo-vagrant).
+
 The reference topology by default only gives 1G of RAM to the `oob-mgmt-server`.
 You will need to increase the RAM for the `oob-mgmt-server` to 2G in order for
 Ansible Tower to install.
