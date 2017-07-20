@@ -28,11 +28,6 @@ Ansible Tower to install.
     sed -i 's/v.memory = 1048/v.memory = 2048/g' Vagrantfile
     vagrant up oob-mgmt-server oob-mgmt-switch leaf01 leaf02 spine01 spine02 server01 server02
     vagrant ssh oob-mgmt-server
-    sudo su - cumulus
-    sudo apt-get install software-properties-common
-    sudo apt-add-repository ppa:ansible/ansible
-    sudo apt-get update
-    sudo apt-get install ansible
     wget https://releases.ansible.com/awx/setup/ansible-tower-setup-latest.tar.gz
     tar xvzf ansible-tower-setup-latest.tar.gz
     cd ansible-tower-setup-*
